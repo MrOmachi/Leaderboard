@@ -22,10 +22,6 @@ body {
   gap: 10px;
 }
 
-table tr:nth-child(odd) {
-  background-color: #dddddd;
-}
-
 table {
   border: 2px solid black;
   width: 100%;
@@ -34,6 +30,10 @@ table {
 
 table tr {
   width: 100%;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ddd;
 }
 
 table tr td {
