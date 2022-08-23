@@ -18,7 +18,7 @@
 
 -Clone this repository with
 
-<code> git clone git@github.com:aceDavon/LeaderBoard.git </code>
+<code> https://github.com/MrOmachi/Leaderboard.git </code>
 using your terminal or command line.
 
 -Change to the project directory by entering :
