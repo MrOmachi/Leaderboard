@@ -1,8 +1,4 @@
-import './styles/main.scss';
-import webpacklg from './assets/webpacklg.png';
+// import './styles/main.scss';
+// import UI from './modules/renderList';
 
-const webpackImg = document.getElementById('webpackImg');
-
-webpackImg.src = webpacklg;
-
-console.log('hello webpack');
+// UI.renderTodom();

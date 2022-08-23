@@ -6,8 +6,57 @@
     <title>Webpack App</title>
   <script defer src="main.js"></script></head>
   <body>
-    <img id="webpackImg" alt="" />
-    <h1>Hello webpack!</h1>
-    <p>webpack works fine</p>
+    <header>
+      <h1>Leaderbard</h1>
+    </header>
+    <main>
+      <div class="leaderboard">
+        <div class="recentScores">
+          <div class="scoresContainer">
+            <h2>Recent scores</h2>
+            <button type="button">Refresh</button>
+          </div>
+          <div class="tableDiv">
+            <table>
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td>Name:</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Name:</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Name:</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Name:</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Name:</td>
+                  <td>100</td>
+                </tr>
+                <tr>
+                  <td>Name:</td>
+                  <td>100</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="scoresInput">
+          <h2>Add your acores</h2>
+          <div class="formInput">
+            <input type="text" name="name" placeholder="Your name" id="name" />
+            <input type="number" name="number" id="number" />
+            <button type="submit">Submit</button>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

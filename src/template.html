@@ -6,8 +6,44 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <img id="webpackImg" alt="" />
-    <h1>Hello webpack!</h1>
-    <p>webpack works fine</p>
+    <main>
+      <div class="headl">
+        <h1>Leaderbard</h1>
+      </div>
+      <div class="leaderboard">
+        <div class="recentScores">
+          <div class="scoresContainer">
+            <h2>Recent scores</h2>
+            <button class="refreshBtn" type="button">Refresh</button>
+          </div>
+          <div class="tableDiv">
+            <table>
+              <thead></thead>
+              <tbody id="tbody"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="scoresInput">
+          <h2>Add your acores</h2>
+          <div class="formDiv">
+            <form class="formInput" action="#">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                id="name"
+              />
+              <input
+                type="number"
+                name="number"
+                placeholder="Your score"
+                id="number"
+              />
+              <button class="formBtn" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
