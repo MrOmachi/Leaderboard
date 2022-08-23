@@ -6,54 +6,41 @@
     <title>Webpack App</title>
   <script defer src="main.js"></script></head>
   <body>
-    <header>
-      <h1>Leaderbard</h1>
-    </header>
     <main>
+      <div class="headl">
+        <h1>Leaderbard</h1>
+      </div>
       <div class="leaderboard">
         <div class="recentScores">
           <div class="scoresContainer">
             <h2>Recent scores</h2>
-            <button type="button">Refresh</button>
+            <button class="refreshBtn" type="button">Refresh</button>
           </div>
           <div class="tableDiv">
             <table>
               <thead></thead>
-              <tbody>
-                <tr>
-                  <td>Name:</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Name:</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Name:</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Name:</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Name:</td>
-                  <td>100</td>
-                </tr>
-                <tr>
-                  <td>Name:</td>
-                  <td>100</td>
-                </tr>
-              </tbody>
+              <tbody id="tbody"></tbody>
             </table>
           </div>
         </div>
         <div class="scoresInput">
           <h2>Add your acores</h2>
-          <div class="formInput">
-            <input type="text" name="name" placeholder="Your name" id="name" />
-            <input type="number" name="number" id="number" />
-            <button type="submit">Submit</button>
+          <div class="formDiv">
+            <form class="formInput" action="#">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your name"
+                id="name"
+              />
+              <input
+                type="number"
+                name="number"
+                placeholder="Your score"
+                id="number"
+              />
+              <button class="formBtn" type="submit">Submit</button>
+            </form>
           </div>
         </div>
       </div>

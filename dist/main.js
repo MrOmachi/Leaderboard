@@ -2,6 +2,42 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/modules/renderList.js":
+/*!***********************************!*\
+  !*** ./src/modules/renderList.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); Object.defineProperty(Constructor, "prototype", { writable: false }); return Constructor; }
+
+var UI = /*#__PURE__*/function () {
+  function UI() {
+    _classCallCheck(this, UI);
+  }
+
+  _createClass(UI, null, [{
+    key: "renderTodom",
+    value: function renderTodom() {
+      var tbody = document.getElementById('tbody');
+      tbody.innerHTML = "\n    <tr>\n    <td>Name:</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>Name:</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>Name:</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>Name:</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>Name:</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>Name:</td>\n    <td>100</td>\n  </tr>\n  <tr>\n    <td>Name:</td>\n    <td>100</td>\n  </tr>\n    ";
+    }
+  }]);
+
+  return UI;
+}();
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UI);
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss":
 /*!***********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
@@ -21,7 +57,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background-color: bisque;\n  text-align: center;\n}\n\n#webpackImg {\n  width: 200px;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAAA;EACE,wBAAA;EACA,kBAAA;AACF;;AAEA;EACE,YAAA;AACF","sourcesContent":["body {\n  background-color: bisque;\n  text-align: center;\n}\n\n#webpackImg {\n  width: 200px;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background-color: white;\n}\n\n.headl {\n  width: 500px;\n  margin: auto;\n  margin: 150px auto 0 auto;\n}\n\n.leaderboard {\n  display: flex;\n  justify-content: center;\n  gap: 40px;\n  width: 500px;\n  margin: auto;\n}\n\n.scoresContainer {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n\ntable {\n  border: 2px solid black;\n  width: 100%;\n  border-collapse: collapse;\n}\n\ntable tr {\n  width: 100%;\n}\n\ntable tr:nth-child(odd) {\n  background-color: #ddd;\n}\n\ntable tr td {\n  width: 1%;\n  margin: 0;\n  padding: 3px 10px;\n}\n\ninput {\n  border: 2px solid black;\n}\n\n.refreshBtn {\n  height: 20px;\n  border: solid 2px;\n}\n\nform {\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n\n.formBtn {\n  width: 30%;\n  margin-left: auto;\n  border: solid 2px;\n}", "",{"version":3,"sources":["webpack://./src/styles/main.scss"],"names":[],"mappings":"AAAA;EACE,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,YAAA;EACA,yBAAA;AACF;;AAEA;EACE,aAAA;EACA,uBAAA;EACA,SAAA;EACA,YAAA;EACA,YAAA;AACF;;AAEA;EACE,aAAA;EACA,mBAAA;EACA,SAAA;AACF;;AAEA;EACE,uBAAA;EACA,WAAA;EACA,yBAAA;AACF;;AAEA;EACE,WAAA;AACF;;AAEA;EACE,sBAAA;AACF;;AAEA;EACE,SAAA;EACA,SAAA;EACA,iBAAA;AACF;;AAEA;EACE,uBAAA;AACF;;AAEA;EACE,YAAA;EACA,iBAAA;AACF;;AAEA;EACE,aAAA;EACA,sBAAA;EACA,SAAA;AACF;;AAEA;EACE,UAAA;EACA,iBAAA;EACA,iBAAA;AACF","sourcesContent":["body {\n  background-color: white;\n}\n\n.headl {\n  width: 500px;\n  margin: auto;\n  margin: 150px auto 0 auto;\n}\n\n.leaderboard {\n  display: flex;\n  justify-content: center;\n  gap: 40px;\n  width: 500px;\n  margin: auto;\n}\n\n.scoresContainer {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n\ntable {\n  border: 2px solid black;\n  width: 100%;\n  border-collapse: collapse;\n}\n\ntable tr {\n  width: 100%;\n}\n\ntable tr:nth-child(odd) {\n  background-color: #ddd;\n}\n\ntable tr td {\n  width: 1%;\n  margin: 0;\n  padding: 3px 10px;\n}\n\ninput {\n  border: 2px solid black;\n}\n\n.refreshBtn {\n  height: 20px;\n  border: solid 2px;\n}\n\nform {\n  display: flex;\n  flex-direction: column;\n  gap: 20px;\n}\n\n.formBtn {\n  width: 30%;\n  margin-left: auto;\n  border: solid 2px;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -528,16 +564,6 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
-/***/ }),
-
-/***/ "./src/assets/webpacklg.png":
-/*!**********************************!*\
-  !*** ./src/assets/webpacklg.png ***!
-  \**********************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__.p + "webpacklg.png";
-
 /***/ })
 
 /******/ 	});
@@ -591,18 +617,6 @@ module.exports = __webpack_require__.p + "webpacklg.png";
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -619,26 +633,6 @@ module.exports = __webpack_require__.p + "webpacklg.png";
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -653,12 +647,10 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles/main.scss */ "./src/styles/main.scss");
-/* harmony import */ var _assets_webpacklg_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./assets/webpacklg.png */ "./src/assets/webpacklg.png");
+/* harmony import */ var _modules_renderList_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/renderList.js */ "./src/modules/renderList.js");
 
 
-var webpackImg = document.getElementById('webpackImg');
-webpackImg.src = _assets_webpacklg_png__WEBPACK_IMPORTED_MODULE_1__;
-console.log('hello webpack');
+_modules_renderList_js__WEBPACK_IMPORTED_MODULE_1__["default"].renderTodom();
 })();
 
 /******/ })()
