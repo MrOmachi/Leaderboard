@@ -1,6 +1,6 @@
-import id from './idGames';
-const postUrl =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
+import id from './idGames.js';
+
+const postUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 
 class UI {
   static getData = async () => {

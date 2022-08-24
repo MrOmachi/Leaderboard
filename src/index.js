@@ -1,15 +1,15 @@
 import './styles/main.scss';
 import UI from './modules/renderList.js';
-import id from './modules/idGames';
-const postUrl =
-  'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
+import id from './modules/idGames.js';
+
+const postUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
 const submitForm = document.querySelector('.formBtn');
 const refreshBtn = document.querySelector('.refreshBtn');
-let user = document.getElementById('name');
-let score = document.getElementById('number');
+const user = document.getElementById('name');
+const score = document.getElementById('number');
 
 UI.getData();
-//Post to the API
+// Post to the API
 const pastGameScores = async () => {
   const res = await fetch(`${postUrl}/${id}/scores`, {
     method: 'POST',
