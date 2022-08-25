@@ -1,11 +1,19 @@
 body {
-  background-color: white;
+  margin: 5px;
+  background: linear-gradient(rgba(200, 0, 100, 0.5), rgba(0, 0, 100, 0.5)),
+    url(../assets/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5px;
+  color: white;
 }
 
 .headl {
   width: 500px;
   margin: auto;
-  margin: 150px auto 0 auto;
+  margin: 10px auto 0 auto;
 }
 
 .leaderboard {
@@ -34,6 +42,7 @@ table tr {
 
 table tr:nth-child(odd) {
   background-color: #ddd;
+  color: black;
 }
 
 table tr td {
