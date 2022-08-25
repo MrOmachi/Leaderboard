@@ -29,7 +29,7 @@ body {
 }
 
 table {
-  border: 1px solid white;
+  border: 1px solid rgba(200, 0, 100, 0.5);
   font-style: italic;
   width: 100%;
   border-collapse: collapse;
@@ -40,8 +40,8 @@ table tr {
 }
 
 table tr:nth-child(odd) {
-  background-color: #ddd;
-  color: black;
+  background-color: rgba(200, 0, 100, 0.5);
+  color: white;
 }
 
 table tr td {
