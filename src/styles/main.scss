@@ -11,7 +11,7 @@ body {
 }
 
 .headl {
-  width: 500px;
+  text-align: center;
   margin: auto;
   margin: 10px auto 0 auto;
 }
@@ -19,9 +19,7 @@ body {
 .leaderboard {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  width: 500px;
-  margin: auto;
+  gap: 90px;
 }
 
 .scoresContainer {
@@ -31,7 +29,8 @@ body {
 }
 
 table {
-  border: 2px solid black;
+  border: 1px solid white;
+  font-style: italic;
   width: 100%;
   border-collapse: collapse;
 }
@@ -52,12 +51,24 @@ table tr td {
 }
 
 input {
-  border: 2px solid black;
+  height: 30px;
+  font-style: italic;
 }
 
 .refreshBtn {
-  height: 20px;
-  border: solid 2px;
+  height: 30px;
+  border: none;
+  background-color: #3600e9;
+  color: white;
+}
+
+.formBtn {
+  width: 30%;
+  margin-left: auto;
+  height: 30px;
+  border: none;
+  background-color: #3600e9;
+  color: white;
 }
 
 form {
@@ -66,8 +77,17 @@ form {
   gap: 20px;
 }
 
-.formBtn {
-  width: 30%;
-  margin-left: auto;
-  border: solid 2px;
+@media (max-width: 700px) {
+  .leaderboard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  table {
+    border: none;
+    font-style: italic;
+    width: 100%;
+    border-collapse: collapse;
+  }
 }
