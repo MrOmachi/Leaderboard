@@ -1,19 +1,26 @@
 body {
-  background-color: white;
+  margin: 5px;
+  background:
+    linear-gradient(rgba(200, 0, 100, 0.5), rgba(0, 0, 100, 0.5)),
+    url(../assets/bj.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5px;
+  color: white;
 }
 
 .headl {
-  width: 500px;
+  text-align: center;
   margin: auto;
-  margin: 150px auto 0 auto;
+  margin: 10px auto 0 auto;
 }
 
 .leaderboard {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  width: 500px;
-  margin: auto;
+  gap: 90px;
 }
 
 .scoresContainer {
@@ -23,7 +30,8 @@ body {
 }
 
 table {
-  border: 2px solid black;
+  border: 1px solid rgba(200, 0, 100, 0.5);
+  font-style: italic;
   width: 100%;
   border-collapse: collapse;
 }
@@ -33,22 +41,35 @@ table tr {
 }
 
 table tr:nth-child(odd) {
-  background-color: #ddd;
+  background-color: rgba(200, 0, 100, 0.5);
+  color: white;
 }
 
 table tr td {
   width: 1%;
-  margin: 0;
-  padding: 3px 10px;
+  height: 30px;
+  padding: 0 10px;
 }
 
 input {
-  border: 2px solid black;
+  height: 30px;
+  font-style: italic;
 }
 
 .refreshBtn {
-  height: 20px;
-  border: solid 2px;
+  height: 30px;
+  border: none;
+  background-color: #3600e9;
+  color: white;
+}
+
+.formBtn {
+  width: 30%;
+  margin-left: auto;
+  height: 30px;
+  border: none;
+  background-color: #3600e9;
+  color: white;
 }
 
 form {
@@ -57,8 +78,19 @@ form {
   gap: 20px;
 }
 
-.formBtn {
-  width: 30%;
-  margin-left: auto;
-  border: solid 2px;
+@media (max-width: 700px) {
+  .leaderboard {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: auto;
+    gap: 10px;
+  }
+
+  table {
+    border: none;
+    font-style: italic;
+    width: 100%;
+    border-collapse: collapse;
+  }
 }
