@@ -4,6 +4,10 @@
 
 > A JavaScript project for the Leaderboard list app, using webpack and ES6 features, this is a requirement for Micronauts in Module 2 block 4. This project is MIT Licensed
 
+**this website can be viewd better on the all screen size**
+
+![image](./src/assets/all-devices-white.png)
+
 ## Live URL
 
 [Deployment](https://snazzy-chebakia-6e07d3.netlify.app/)
