@@ -46,8 +46,8 @@ table tr:nth-child(odd) {
 
 table tr td {
   width: 1%;
-  margin: 0;
-  padding: 3px 10px;
+  height: 30px;
+  padding: 0 10px;
 }
 
 input {
@@ -81,6 +81,8 @@ form {
   .leaderboard {
     display: flex;
     flex-direction: column;
+    width: 75%;
+    margin: auto;
     gap: 10px;
   }
 
